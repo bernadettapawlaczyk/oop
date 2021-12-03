@@ -12,6 +12,11 @@ public class RemoteControl {
 
     private int currentVolume;
     private int currentChannel;
+    private String color;
+
+    public RemoteControl(String color) {
+        this.color = color;
+    }
 
     public void volumeUp(){
         currentVolume++;
@@ -35,5 +40,21 @@ public class RemoteControl {
 
     public int getCurrentChannel() {
         return currentChannel;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setCurrentVolume(int currentVolume) {
+        this.currentVolume = currentVolume;
+    }
+
+    public void setCurrentChannel(int currentChannel) {
+        this.currentChannel = currentChannel;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

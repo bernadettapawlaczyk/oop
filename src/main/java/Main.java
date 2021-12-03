@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        RemoteControl remoteControl = new RemoteControl();
+        RemoteControl remoteControl = new RemoteControl("black");
 
         remoteControl.nextChannel();
         remoteControl.nextChannel();
@@ -11,5 +11,14 @@ public class Main {
 
         System.out.println(remoteControl.getCurrentChannel());
         System.out.println(remoteControl.getCurrentVolume());
+        System.out.println(remoteControl.getColor());
+
+        remoteControl.setCurrentChannel(10);
+        remoteControl.setCurrentVolume(50);
+        remoteControl.setColor("white");
+
+        System.out.println(remoteControl.getCurrentChannel());
+        System.out.println(remoteControl.getCurrentVolume());
+        System.out.println(remoteControl.getColor());
     }
 }
