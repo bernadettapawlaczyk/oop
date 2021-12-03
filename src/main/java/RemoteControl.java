@@ -29,5 +29,11 @@ public class RemoteControl {
         currentChannel--;
     }
 
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
 
+    public int getCurrentChannel() {
+        return currentChannel;
+    }
 }
